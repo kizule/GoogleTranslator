@@ -1,0 +1,26 @@
+{
+	"name": "GoogleTranslator",
+	"version": "0.4.",
+	"author": "Zoran Dori with customization",
+	"url": "https://www.mediawiki.org/wiki/Extension:GoogleTranslator",
+	"descriptionmsg": "googletranslator-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"ExtensionMessagesFiles": {
+		"GoogleTranslatorAlias": "GoogleTranslator.alias.php"
+	},
+	"AutoloadClasses": {
+		"GoogleTranslator": "GoogleTranslator.php"
+	},
+	"Hooks": {
+		"SkinBuildSidebar": "GoogleTranslator::forGoogleTranslatorInSidebar"
+	},
+	"config": {
+		"GoogleTranslatorOriginal": "en",
+		"wgGoogleTranslatorLanguages": "fr,de,sr"
+	},
+	"manifest_version": 2
+}

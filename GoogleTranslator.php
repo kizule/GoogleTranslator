@@ -23,4 +23,22 @@ class GoogleTranslator {
 			],
 		];
 	}
+
+	/**
+	 * @param mixed &$data
+	 * @param Skin $skin
+	 * @return void
+	 */
+	public static function forGoogleTranslatorAfterContent( &$data, $skin ) {
+		$data .=
+			"
+	<script>
+			function googleTranslateElementInit() {
+			  new google.translate.TranslateElement({
+			  }, 'google_translate_element');
+			}
+	</script>
+	<script src=\"//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\"></script>".
+			'';
+	}
 }

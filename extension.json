@@ -16,11 +16,16 @@
 		"GoogleTranslator": "GoogleTranslator.php"
 	},
 	"Hooks": {
-		"SkinBuildSidebar": "GoogleTranslator::forGoogleTranslatorInSidebar"
+		"SkinBuildSidebar": "GoogleTranslator::forGoogleTranslatorInSidebar",
+		"SkinAfterContent": "GoogleTranslator::forGoogleTranslatorAfterContent"
 	},
 	"config": {
-		"GoogleTranslatorOriginal": "en",
-		"wgGoogleTranslatorLanguages": "fr,de,sr"
+		"GoogleTranslatorOriginal": {
+			"value": "en"
+		},
+		"GoogleTranslatorLanguages": {
+			"value": "de,fr,sr"
+		}
 	},
 	"manifest_version": 2
 }

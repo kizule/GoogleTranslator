@@ -10,7 +10,10 @@
 
 /* Pad Google Translate box in portlet in sidebar */
 #p-googleatranslator .pBody {
-	width: 95%;
 	padding-top: 5px;
 	text-align:  center;
+}
+
+.goog-te-gadget .goog-te-combo {
+	width: 95%;
 }

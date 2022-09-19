@@ -8,8 +8,9 @@
 * @addtogroup Extensions
 */
 
-/* Pad Google AdSense box in portlet in sidebar */
+/* Pad Google Translate box in portlet in sidebar */
 #p-googleatranslator .pBody {
+	width: 95%;
 	padding-top: 5px;
 	text-align:  center;
 }
